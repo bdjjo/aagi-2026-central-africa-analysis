@@ -4,15 +4,15 @@
 
 This analysis uses **only** the two supplied files:
 
-- `AAGI_2026_CentralAfrica_Bainamndi.docx` — the AAGI 2026 Central Africa
+- `AAGI_2026_CentralAfrica_Bainamndi.docx`  The AAGI 2026 Central Africa
   Regional Data Collection Report (comparative scores transcribed from its
   page-2 summary).
-- `CopyofAAGI_Data_Collection_centralafricarepublic.xlsx` — the supplied,
+- `CopyofAAGI_Data_Collection_centralafricarepublic.xlsx`  The supplied,
   partially completed data-collection workbook.
 
 No external scores or country facts are introduced into the dataset. Report
 citations use page numbers; workbook citations use sheet names and row ranges.
-(Where the *accompanying articles* add outside context — for example continental
+(Where the *accompanying articles* add outside context for example continental
 policy milestones — that context is explicitly labelled as external and cited
 separately. It is never merged into the dataset.)
 
