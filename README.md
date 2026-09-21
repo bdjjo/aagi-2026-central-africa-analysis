@@ -127,19 +127,15 @@ a fresh clone with no path edits, provided the two source files are present in
 
 ## Suggested future data release
 
-To make the index fully reproducible, a future release should include the six
+To make the index fully reproducible, a future release will include the six
 completed country workbooks (or a normalised indicator-level file), unrounded
 scores, the exact composite formula, evidence dates, explicit missingness flags,
 and a field that separates *governance status* from *evidence status*.
 
-## Publish the display page (GitHub Pages)
+## Publish the display page 
 
 This repository ships a self-contained landing page (`index.html`) plus a
-`.nojekyll` marker so GitHub serves the `figures/` folder verbatim. After pushing
-the repo, enable Pages in **Settings → Pages → Build and deployment → Source:
-Deploy from a branch → Branch: `main` / `/ (root)`**. Within a minute the site is
-live at `https://<username>.github.io/<repo-name>/`, showing the executive
-summary, headline statistics, and all nine figures. No build step is required.
+`.nojekyll` marker so GitHub serves the `figures/` folder verbatim. 
 
 ## Citation
 
