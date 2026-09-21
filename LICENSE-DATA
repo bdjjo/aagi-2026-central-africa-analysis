@@ -1,0 +1,17 @@
+Data and documentation licence
+==============================
+
+The CODE in this repository (the `code/` directory and the notebook in
+`notebooks/`) is licensed under the MIT License (see LICENSE).
+
+The PROCESSED DATA, FIGURES, and WRITTEN DOCUMENTATION produced in this
+repository (the `data/processed/`, `figures/`, `docs/`, and `articles/`
+directories) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+The RAW SOURCE FILES under `data/raw/` are the supplied Africa AI Governance
+Index (AAGI) 2026 Central Africa Regional Data Collection Report and its
+associated data-collection workbook. They are included for reproducibility and
+remain the property of their original authors and the AAGI programme. Reuse of
+those source files is subject to the AAGI programme's own terms; confirm
+permission before redistribution.

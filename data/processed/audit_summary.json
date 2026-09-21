@@ -1,0 +1,100 @@
+{
+  "report_summary_rows": 6,
+  "report_pillar_cells": 48,
+  "workbook_sheets": 14,
+  "pillar_sheets": [
+    {
+      "sheet": "P1 Strategy & Vision",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 4,
+      "country": "Cameroon",
+      "fellow": "Daliwa Joseph Bainamndi",
+      "date": "07 June 2026"
+    },
+    {
+      "sheet": "P2 Governance & Regulation",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 4,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    },
+    {
+      "sheet": "P3 Infrastructure & Data",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 0,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    },
+    {
+      "sheet": "P4 Human Capital",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 0,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    },
+    {
+      "sheet": "P5 Innovation & Ecosystem",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 0,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    },
+    {
+      "sheet": "P6 Ethics & Inclusion",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 0,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    },
+    {
+      "sheet": "P7 Regional Integration",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 0,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    },
+    {
+      "sheet": "P8 Implementation & Impact",
+      "indicator_rows": 10,
+      "filled_indicator_rows": 0,
+      "country": "[Enter]",
+      "fellow": "[Enter]",
+      "date": "[Enter]"
+    }
+  ],
+  "supporting_sheets": [
+    {
+      "sheet": "Country Profile",
+      "nonempty_rows": 41,
+      "non_placeholder_values": 43
+    },
+    {
+      "sheet": "Economy & Investment",
+      "nonempty_rows": 30,
+      "non_placeholder_values": 27
+    },
+    {
+      "sheet": "Public Perception",
+      "nonempty_rows": 24,
+      "non_placeholder_values": 26
+    },
+    {
+      "sheet": "AI Incidents Tracker",
+      "nonempty_rows": 24,
+      "non_placeholder_values": 34
+    }
+  ],
+  "workbook_populated_indicator_rows": 8,
+  "report_page": 2,
+  "caveats": [
+    "Report composites are approximate (~) in the report.",
+    "Workbook is a country template with only Cameroon P1 rows S1.1\u2013S1.4 and P2 rows G2.1\u2013G2.4 populated.",
+    "Comparisons and correlations use n=6 countries and are descriptive, not inferential."
+  ]
+}

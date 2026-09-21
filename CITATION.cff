@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this analysis, please cite it as below."
+title: "AAGI Central Africa 2026 — Reproducible Analysis"
+authors:
+  - family-names: Bainamndi
+    given-names: Daliwa Joseph
+    affiliation: "Africa AI Governance Index (AAGI) — Central Africa Chapter"
+date-released: 2026-09-21
+version: "1.0.0"
+license: "MIT AND CC-BY-4.0"
+keywords:
+  - AI governance
+  - Central Africa
+  - AAGI
+  - reproducible research
+  - policy analysis

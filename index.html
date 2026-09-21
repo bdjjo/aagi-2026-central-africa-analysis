@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAGI Central Africa 2026 — Findings</title>
+<meta name="description" content="Reproducible analysis of the 2026 Africa AI Governance Index for Central Africa: six countries, eight pillars, and the gap between strategy and delivery.">
+<style>
+  :root{
+    --bg:#ffffff; --panel:#f6f8fa; --border:#d0d7de; --ink:#1f2328; --muted:#59636e;
+    --accent:#0072B2; --accent2:#009E73; --warn:#D55E00; --chip:#eaeef2;
+    --shadow:0 1px 3px rgba(31,35,40,.08),0 1px 2px rgba(31,35,40,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1117; --panel:#161b22; --border:#30363d; --ink:#e6edf3; --muted:#9198a1;
+      --accent:#4aa3df; --accent2:#3fb98f; --warn:#e8823c; --chip:#21262d;
+      --shadow:0 1px 3px rgba(0,0,0,.4);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px; margin:0 auto; padding:0 16px}
+  header{
+    padding:56px 16px 40px; text-align:center;
+    border-bottom:1px solid var(--border); background:var(--panel);
+  }
+  header .kicker{
+    display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:14px; font-weight:600;
+  }
+  h1{font-size:clamp(1.7rem,4.5vw,2.6rem); line-height:1.15; margin:.2em auto .35em; max-width:20ch}
+  header p.lede{max-width:60ch; margin:0 auto; color:var(--muted); font-size:1.08rem}
+  header .byline{margin-top:20px; font-size:.92rem; color:var(--muted)}
+  .badges{margin-top:18px; display:flex; gap:8px; flex-wrap:wrap; justify-content:center}
+  .badge{
+    font-size:.8rem; padding:4px 10px; border:1px solid var(--border); border-radius:999px;
+    background:var(--bg); color:var(--muted);
+  }
+  section{padding:44px 0; border-bottom:1px solid var(--border)}
+  h2{font-size:1.35rem; margin:0 0 .6em}
+  h2 .n{color:var(--accent); font-variant-numeric:tabular-nums; margin-right:.4em}
+  p{margin:0 0 1em}
+  .muted{color:var(--muted)}
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin-top:8px}
+  .stat{
+    background:var(--panel); border:1px solid var(--border); border-radius:12px;
+    padding:18px; box-shadow:var(--shadow);
+  }
+  .stat .num{font-size:1.7rem; font-weight:700; color:var(--accent); line-height:1.1}
+  .stat .lbl{font-size:.9rem; margin-top:6px; color:var(--ink)}
+  .stat .src{font-size:.75rem; color:var(--muted); margin-top:8px}
+  .gallery{display:grid; gap:26px; margin-top:8px}
+  figure{margin:0; background:var(--panel); border:1px solid var(--border); border-radius:12px;
+    overflow:hidden; box-shadow:var(--shadow)}
+  figure img{display:block; width:100%; height:auto; background:#fff}
+  figcaption{padding:12px 16px; font-size:.92rem; color:var(--muted)}
+  figcaption b{color:var(--ink); font-weight:600}
+  .note{
+    background:var(--chip); border-left:3px solid var(--warn); border-radius:8px;
+    padding:14px 16px; font-size:.92rem; color:var(--ink);
+  }
+  .links{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; margin-top:8px}
+  a.card{
+    display:block; text-decoration:none; color:var(--ink);
+    background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:16px;
+    box-shadow:var(--shadow); transition:border-color .15s ease, transform .15s ease;
+  }
+  a.card:hover{border-color:var(--accent); transform:translateY(-1px)}
+  a.card .t{font-weight:600; color:var(--accent)}
+  a.card .d{font-size:.88rem; color:var(--muted); margin-top:4px}
+  a{color:var(--accent)}
+  footer{padding:34px 16px 60px; text-align:center; color:var(--muted); font-size:.88rem}
+  ul{margin:0 0 1em; padding-left:1.2em}
+  li{margin:.25em 0}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="kicker">Africa AI Governance Index · 2026 · Central Africa Chapter</span>
+    <h1>Central Africa's AI governance gap is an implementation problem</h1>
+    <p class="lede">A reproducible reading of the 2026 Africa AI Governance Index across six Central African countries — where governance capacity concentrates, and where policy runs ahead of delivery.</p>
+    <div class="byline">Daliwa Joseph Bainamndi · Central Africa Chapter Lead</div>
+    <div class="badges">
+      <span class="badge">6 countries</span>
+      <span class="badge">8 pillars · 0–4 scale</span>
+      <span class="badge">9 figures</span>
+      <span class="badge">Reproducible</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section id="summary">
+    <h2><span class="n">01</span>Executive summary</h2>
+    <p>The 2026 Africa AI Governance Index (AAGI) places all six Central African countries it
+    covers — Cameroon, Gabon, the Democratic Republic of Congo, the Republic of Congo, Chad, and
+    the Central African Republic — below its <b>Established</b> threshold of 3.0, with reported
+    composites from roughly 1.5 down to 0.2 <span class="muted">(Report p.&nbsp;2)</span>. The
+    decisive pattern is not an absence of policy but a gap between intent and delivery:
+    <b>Strategy&nbsp;and&nbsp;Vision</b> is the strongest average pillar (~1.53/4) while
+    <b>Implementation&nbsp;and&nbsp;Impact</b> is the weakest (~0.57/4). The six countries follow
+    different pathways rather than one, so profiles — not a single ranking — should guide policy.
+    A structural caveat frames the whole exercise: the supplied data-collection workbook holds only
+    eight populated indicator rows out of eighty, and the index's own rule that a zero denotes
+    <i>no findable evidence</i> rather than <i>proven absence</i> travels with every score.</p>
+    <div class="note">
+      <b>Scope.</b> These figures describe the six countries in the report's page-2 summary. A broader
+      Central Africa chapter covering additional states is a separate dataset with different composites
+      and must not be compared cell-for-cell with the numbers here.
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2><span class="n">02</span>Headline statistics</h2>
+    <div class="stats">
+      <div class="stat">
+        <div class="num">0 of 6</div>
+        <div class="lbl">countries reach the Established threshold of 3.0.</div>
+        <div class="src">Report p. 2</div>
+      </div>
+      <div class="stat">
+        <div class="num">1.53 → 0.57</div>
+        <div class="lbl">Strongest pillar (Strategy) vs weakest (Implementation), regional means.</div>
+        <div class="src">Report p. 2 · n = 6</div>
+      </div>
+      <div class="stat">
+        <div class="num">1.3 pts</div>
+        <div class="lbl">Widest strategy-to-implementation gap (Cameroon and Chad).</div>
+        <div class="src">Report p. 2</div>
+      </div>
+      <div class="stat">
+        <div class="num">8 of 80</div>
+        <div class="lbl">Populated indicator rows in the supplied workbook — a transparency gap.</div>
+        <div class="src">Workbook P1–P8 · audit</div>
+      </div>
+      <div class="stat">
+        <div class="num">~1.5 ×3</div>
+        <div class="lbl">Gabon, DRC and Republic of Congo share a composite but differ by profile.</div>
+        <div class="src">Report p. 2 · interpretation</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="figures">
+    <h2><span class="n">03</span>Findings in figures</h2>
+    <p class="muted">All charts are generated by <code>code/aagi_analysis.py</code> from the report's
+    page-2 summary. Vector (SVG) versions are in <code>figures/svg/</code>.</p>
+    <div class="gallery">
+      <figure><img src="figures/png/01_composite_ranking.png" alt="Composite ranking of six countries, all below the 3.0 threshold" loading="lazy">
+        <figcaption><b>1. Composite ranking.</b> Six composites span CAR 0.2 to a three-country cluster at ~1.5; all sit below the Established threshold of 3.0.</figcaption></figure>
+      <figure><img src="figures/png/03_mean_pillars.png" alt="Mean pillar scores, strategy highest, implementation lowest" loading="lazy">
+        <figcaption><b>2. Regional pillar means.</b> Strategy and governance are highest on average; implementation is lowest — the core implementation gap.</figcaption></figure>
+      <figure><img src="figures/png/02_pillar_heatmap.png" alt="Heatmap of pillar scores by country" loading="lazy">
+        <figcaption><b>3. Pillar heatmap.</b> Country profiles differ by pillar, not just by a single regional average.</figcaption></figure>
+      <figure><img src="figures/png/09_six_country_pillar_comparison.png" alt="Grouped bar chart of all pillars for six countries" loading="lazy">
+        <figcaption><b>4. Six-country profile.</b> Full pillar breakdown for all six countries against the 3.0 threshold.</figcaption></figure>
+      <figure><img src="figures/png/08_strategy_vs_implementation.png" alt="Scatter of strategy versus implementation scores" loading="lazy">
+        <figcaption><b>5. Strategy vs implementation.</b> High strategy scores do not translate directly into implementation.</figcaption></figure>
+      <figure><img src="figures/png/05_tier_pillar_comparison.png" alt="Higher tier versus lower tier pillar comparison" loading="lazy">
+        <figcaption><b>6. Tier comparison.</b> The lower tier (Chad, CAR) lags most on infrastructure, innovation, and implementation.</figcaption></figure>
+      <figure><img src="figures/png/04_pillar_spread.png" alt="Cross-country score range by pillar" loading="lazy">
+        <figcaption><b>7. Cross-country spread.</b> Strategy and regional integration vary most across the six countries.</figcaption></figure>
+      <figure><img src="figures/png/06_score_distribution.png" alt="Distribution of country-pillar scores" loading="lazy">
+        <figcaption><b>8. Score distribution.</b> Most of the 48 country–pillar cells sit between 0 and 2.</figcaption></figure>
+      <figure><img src="figures/png/07_workbook_completion.png" alt="Workbook completeness by pillar" loading="lazy">
+        <figcaption><b>9. Workbook completeness.</b> Only 8 of 80 indicator rows are populated — the reproducibility limit behind the analysis.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="explore">
+    <h2><span class="n">04</span>Explore the repository</h2>
+    <div class="links">
+      <a class="card" href="README.md"><div class="t">README</div><div class="d">Scope, method, and how to reproduce.</div></a>
+      <a class="card" href="docs/methodology_and_limitations.md"><div class="t">Methodology &amp; limitations</div><div class="d">Evidence rules, the zero-score problem, caveats.</div></a>
+      <a class="card" href="docs/data_dictionary.md"><div class="t">Data dictionary</div><div class="d">Every field, its source, and its type.</div></a>
+      <a class="card" href="data/processed/"><div class="t">Processed data</div><div class="d">Clean CSV exports + audit JSON.</div></a>
+      <a class="card" href="code/aagi_analysis.py"><div class="t">Analysis code</div><div class="d">Regenerates all data and figures.</div></a>
+      <a class="card" href="notebooks/01_aagi_reproduction.ipynb"><div class="t">Reproduction notebook</div><div class="d">A narrated walk-through.</div></a>
+      <a class="card" href="articles/medium_article.md"><div class="t">Medium article</div><div class="d">The full write-up of these findings.</div></a>
+      <a class="card" href="articles/linkedin_posts.md"><div class="t">LinkedIn posts</div><div class="d">Six shareable summaries.</div></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Data source: AAGI 2026 Central Africa Regional Data Collection Report (page 2).
+    Analysis reproduces from the two supplied source files.</p>
+    <p>Code © 2026 Daliwa Joseph Bainamndi · MIT License · Data, figures &amp; text under CC BY 4.0.
+    Cross-country statistics use n = 6 and are descriptive, not inferential.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+Country,Composite,Pillar,Score
+Cameroon,1.3,P1 Strategy,2.1
+Gabon,1.5,P1 Strategy,1.7
+DRC,1.5,P1 Strategy,2.1
+Republic of Congo,1.5,P1 Strategy,1.8
+Chad,0.8,P1 Strategy,1.4
+CAR,0.2,P1 Strategy,0.1
+Cameroon,1.3,P2 Governance,1.3
+Gabon,1.5,P2 Governance,1.8
+DRC,1.5,P2 Governance,1.5
+Republic of Congo,1.5,P2 Governance,2.0
+Chad,0.8,P2 Governance,1.7
+CAR,0.2,P2 Governance,0.6
+Cameroon,1.3,P3 Infrastructure,1.3
+Gabon,1.5,P3 Infrastructure,1.6
+DRC,1.5,P3 Infrastructure,1.5
+Republic of Congo,1.5,P3 Infrastructure,0.9
+Chad,0.8,P3 Infrastructure,0.4
+CAR,0.2,P3 Infrastructure,0.2
+Cameroon,1.3,P4 Human Capital,1.3
+Gabon,1.5,P4 Human Capital,0.9
+DRC,1.5,P4 Human Capital,1.3
+Republic of Congo,1.5,P4 Human Capital,1.6
+Chad,0.8,P4 Human Capital,0.4
+CAR,0.2,P4 Human Capital,0.0
+Cameroon,1.3,P5 Innovation,1.1
+Gabon,1.5,P5 Innovation,0.9
+DRC,1.5,P5 Innovation,1.5
+Republic of Congo,1.5,P5 Innovation,1.2
+Chad,0.8,P5 Innovation,0.3
+CAR,0.2,P5 Innovation,0.0
+Cameroon,1.3,P6 Ethics,1.5
+Gabon,1.5,P6 Ethics,1.6
+DRC,1.5,P6 Ethics,1.4
+Republic of Congo,1.5,P6 Ethics,1.5
+Chad,0.8,P6 Ethics,0.6
+CAR,0.2,P6 Ethics,0.3
+Cameroon,1.3,P7 Regional,1.2
+Gabon,1.5,P7 Regional,1.8
+DRC,1.5,P7 Regional,1.4
+Republic of Congo,1.5,P7 Regional,2.1
+Chad,0.8,P7 Regional,1.3
+CAR,0.2,P7 Regional,0.2
+Cameroon,1.3,P8 Implementation,0.8
+Gabon,1.5,P8 Implementation,0.7
+DRC,1.5,P8 Implementation,1.0
+Republic of Congo,1.5,P8 Implementation,0.8
+Chad,0.8,P8 Implementation,0.1
+CAR,0.2,P8 Implementation,0.0
