@@ -13,7 +13,7 @@ This analysis uses **only** the two supplied files:
 No external scores or country facts are introduced into the dataset. Report
 citations use page numbers; workbook citations use sheet names and row ranges.
 (Where the *accompanying articles* add outside context for example continental
-policy milestones — that context is explicitly labelled as external and cited
+policy milestones, that context is explicitly labelled as external and cited
 separately. It is never merged into the dataset.)
 
 ## 2. The index
@@ -70,7 +70,7 @@ the report's page-2 table; workbook figures report completeness only.
    causal effects, incident rates, investment figures, or public-opinion
    measures can be derived from the supplied material.
 
-## 6. Scope note — six countries, not the full region
+## 6. Scope note: six countries, not the full region
 
 This repository's scope is fixed to the **six countries on report page 2**.
 Central Africa is variously defined; the Economic Community of Central African
