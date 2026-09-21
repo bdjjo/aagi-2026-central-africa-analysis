@@ -1,4 +1,4 @@
-# AAGI Central Africa 2026 — Reproducible Analysis
+# AAGI Central Africa 2026 - Reproducible Analysis
 
 An evidence-constrained audit and analysis of the supplied **Africa AI
 Governance Index (AAGI) 2026 Central Africa Regional Data Collection Report**
@@ -19,7 +19,7 @@ below).
 
 All six countries score below the index's **Established** composite threshold of
 3.0; the region's strongest average pillar is *Strategy and Vision* (~1.53/4)
-and its weakest is *Implementation and Impact* (~0.57/4) — an implementation
+and its weakest is *Implementation and Impact* (~0.57/4), an implementation
 gap, not an absence of policy. *(Report p. 2; descriptive.)*
 
 ---
@@ -33,7 +33,7 @@ everything downstream and are repeated in every figure caption and article:
    an indicator-level panel. The report presents composites as *approximate* (~)
    and rounds pillar scores to one decimal.
 2. **The supplied workbook is a partially completed country template.** It
-   contains **8 populated indicator rows out of 80** — the first four indicators
+   contains **8 populated indicator rows out of 80**. The first four indicators
    of P1 (S1.1–S1.4) and P2 (G2.1–G2.4). It therefore **cannot reproduce** the
    report's six-country results. Workbook figures audit *completeness only*.
 
