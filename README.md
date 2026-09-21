@@ -141,5 +141,5 @@ This repository ships a self-contained landing page (`index.html`) plus a
 
 See [`CITATION.cff`](CITATION.cff). Suggested short form:
 
-> Bainamndi, D. J. (2026). *AAGI Central Africa 2026 — Reproducible Analysis.*
+> Bainamndi, D. J. (2026). *AAGI Central Africa 2026: Reproducible Analysis.*
 > Africa AI Governance Index, Central Africa Chapter.
